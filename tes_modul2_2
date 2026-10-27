@@ -1,0 +1,10 @@
+I = int(input("Masukkan jumlah isian singkat yang sudah dikerjakan:"))
+E = int(input("Masukkan jumlah esai yang sudah dikerjakan:"))
+
+SI = 14 - I
+SE = 2 - E
+
+if ((SI*10) + (SE*20) <= 60 ):
+    print("Tuan Riz akan berhasil menyelesaikan semua soal")
+else:
+    print("Tuan Riz tidak akan berhasil menyelesaikan semua soal")

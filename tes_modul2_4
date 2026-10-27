@@ -1,0 +1,20 @@
+Xi = int(input("Masukkan koordinat katak awal:"))
+a = int(input("Masukkan panjang lompatan katak ke kanan:"))
+b = int(input("Masukkan panjang lompatan katak ke kiri:"))
+
+if (Xi > 0):
+    if ((Xi % 2) == 0):
+        k = a*b
+    elif ((Xi % 2) != 0):
+        k = a*2
+else:
+    k = a*b
+    if ((Xi % 3) == 0):
+        k = b*2
+
+if ((k % 2) == 0):
+    Xf = Xi + (a*(k // 2)) - (b*(k // 2))
+else:
+    Xf = Xi + (a*((k + 1) // 2)) - (b*((k - 1) // 2))
+
+print(f"Koordinat katak sekarang adalah {Xf}")

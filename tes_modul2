@@ -1,0 +1,12 @@
+N = int(input("Masukkan bilangan:"))
+
+if ((N % 2) == 0):
+    if (N > 0):
+        print (str(N) + " adalah bilangan genap positif")
+    elif (N < 0):
+        print (str(N) + " adalah bilangan genap negatif")
+else:
+    if (N > 0):
+        print (str(N) + " adalah bilangan ganjil positif")
+    else:
+        print (str(N) + " adalah bilangan ganjil negatif")

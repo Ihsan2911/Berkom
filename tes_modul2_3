@@ -1,0 +1,19 @@
+N = int(input("Masukkan bilangan 4 digit:"))
+
+D1 = N // 1000
+M1 = N % 1000
+D2 = M1 // 100
+M2 = N % 100
+D3 = M2 // 10
+D4 = N % 10
+
+J = D1 + D2 + D3 + D4
+
+if ((J % D1) == 0 ):
+     if ((J % D2) == 0):
+         if ((J % D3) == 0):
+             if ((J % D4) == 0):
+                 print(str(N) + " adalah bilangan Bravo")
+
+else:
+    print("bukan bilangan Bravo")
